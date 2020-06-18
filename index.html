@@ -161,6 +161,119 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ccit18081430228.github.io/2020/06/18/%E6%B8%A9%E5%BA%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar1.jpg">
+      <meta itemprop="name" content="李艳">
+      <meta itemprop="description" content="做个可爱的姑娘 不烦世事 满心欢喜">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="木子李">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/18/%E6%B8%A9%E5%BA%A6/" class="post-title-link" itemprop="url">服务特性</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-06-18 14:31:59 / 修改时间：16:42:28" itemprop="dateCreated datePublished" datetime="2020-06-18T14:31:59+08:00">2020-06-18</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/06/18/%E6%B8%A9%E5%BA%A6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/18/%E6%B8%A9%E5%BA%A6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>308</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h2><blockquote>
+<p>一.在蓝牙设备链接成功后在添加一些服务特性.</p>
+<p>1.在我们下载固件到bbc板子中时，bbc板子在程序设计里就有了蓝牙加速计服务和蓝牙led服务。图片如下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//12.png" alt=""></p>
+</blockquote>
+<p>2.服务,特性的UUID.我们要在电脑上打开蓝牙 然后进行蓝牙连接。</p>
+<p>我们要看到开发板的UUID和LED服务UUID一致时，说明LED服务在bbc板子上添加成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//727E30E0F01DFE6DABE8F5937A485832.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//01B47B00A3E2176DF4B4929623F022A4.png" alt=""></p>
+<p>3.要用chrome自带的蓝牙插件，看一下bbc板子上是否有温度服务。发现包含温度服务然后进行修改电脑源代码，增加温度服务，特性。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//FEE0AE19F997267FF5D58E4F83BE9C5F.png" alt=""></p>
+<p>要在搜索栏输入蓝牙然后相对应的蓝牙设备就出来了，找到蓝牙温度服务进行下载。</p>
+<p>4.代码如下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//B9171EF4A10BD0900B093DA788AB4482.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//187DB46E20728316C43BCE1CD0131BE0.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//6DCBA12721E90BF28629BB5E4848090A.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//052DD9EF04F23B5428821F4CD9F93C39.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//551C4ACADA05A16F370A521BECDD5213.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//2785C3AD3240D1E9538FEC321CB982EC.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//D7132EE2660D9E3867324F9A3548FF4D.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//9E2BC4062275B4D8426CB40A82B734C0.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//1234.jpg" alt=""></p>
+<p>5.代码写完后要在浏览器里按F12，服务，特性UUID与开发板一致则连接成功。</p>
+<img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//71DD07381D43BB0318592A93D0E1DD29.png" style="zoom:50%;" />
+
+<p>6.现象如下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ccit18081430228/YY//10F1C98EC50889C62BCEB2E5F79AB935.jpg" alt=""></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ccit18081430228.github.io/2020/06/16/MicroBit%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -567,106 +680,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ccit18081430228.github.io/2020/04/21/%E5%9B%BE%E7%89%87/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar1.jpg">
-      <meta itemprop="name" content="李艳">
-      <meta itemprop="description" content="做个可爱的姑娘 不烦世事 满心欢喜">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="木子李">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/21/%E5%9B%BE%E7%89%87/" class="post-title-link" itemprop="url">博客的搭建</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-21 11:06:28" itemprop="dateCreated datePublished" datetime="2020-04-21T11:06:28+08:00">2020-04-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-01 00:01:20" itemprop="dateModified" datetime="2020-06-01T00:01:20+08:00">2020-06-01</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/04/21/%E5%9B%BE%E7%89%87/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/21/%E5%9B%BE%E7%89%87/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/21/%E5%9B%BE%E7%89%87/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://ccit18081430228.github.io/2020/04/21/markdown%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -747,6 +760,106 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/04/21/markdown%E8%AF%AD%E6%B3%95%E6%95%99%E7%A8%8B/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://ccit18081430228.github.io/2020/04/21/%E5%9B%BE%E7%89%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar1.jpg">
+      <meta itemprop="name" content="李艳">
+      <meta itemprop="description" content="做个可爱的姑娘 不烦世事 满心欢喜">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="木子李">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/21/%E5%9B%BE%E7%89%87/" class="post-title-link" itemprop="url">博客的搭建</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-21 11:06:28" itemprop="dateCreated datePublished" datetime="2020-04-21T11:06:28+08:00">2020-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-01 00:01:20" itemprop="dateModified" datetime="2020-06-01T00:01:20+08:00">2020-06-01</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/04/21/%E5%9B%BE%E7%89%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/04/21/%E5%9B%BE%E7%89%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="hexo搭建"><a href="#hexo搭建" class="headerlink" title="hexo搭建"></a>hexo搭建</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/21/%E5%9B%BE%E7%89%87/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -935,7 +1048,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -986,7 +1099,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
 
         
